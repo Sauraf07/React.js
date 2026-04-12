@@ -1,1 +1,8 @@
 React is a Java script library for building ui.
+=======================
+💥 Interview Questions (Day 1 Level)
+What is React?
+What is JSX?
+Difference between HTML and JSX?
+What is a component?
+Why React uses components?
