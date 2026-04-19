@@ -1,29 +1,15 @@
-import { useState } from "react"
-import Todo from "./components/Todoapp"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import TodoApp from './components/Todo1';
 
-function App(){
-const [task,setTask]=useState("")
-    const [list,setlist]= useState([])
-
-    const addTask = ()=>{
-        setlist([...list,task])
-        setTask("")
-    }
-    
-    return <>
-    <div>
-        <input value={task}
-        onChange={(e)=>{setTask(e.target.value)}}
-        />
-        <button onClick={addTask}>Add</button>
-
-        <ul>
-            {list.map((item,i)=>(
-                <li key={i}>{item}</li>
-            ))}
-        </ul>
-    </div>
-    
-    </>
+function App() {
+  const name = "saurav"
+  return (
+    <Router>
+      <h1>{name}</h1>
+      <TodoApp/>
+    </Router>
+  );
 }
-export default App
+
+export default App;
