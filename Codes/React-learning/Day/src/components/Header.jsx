@@ -1,6 +1,13 @@
-function Header(){
-    return <>
-    <h1>Welcome To Dragons Institude</h1>
-    </>
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/1" element={<h1>Home</h1>} />
+        <Route path="/2" element={<h1>About</h1>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-export default Header
+export default App;
